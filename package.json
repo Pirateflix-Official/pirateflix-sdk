@@ -1,0 +1,40 @@
+{
+  "name": "pirateflix-sdk",
+  "version": "3.0.0",
+  "description": "pirateflix SDK",
+  "keywords": [
+    "pirateflix",
+    "pirateflix-time",
+    "sdk"
+  ],
+  "homepage": "https://pirateflix.app  "bugs": {
+    "url": "https://pirateflix.app  },
+  "author": {
+    "name": "Tycho Bokdam",
+    "email": "t.bokdam@seronaris.nl"
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://pirateflix.app  },
+  "scripts": {
+    "build": "NODE_ENV=production babel src -d ./ --copy-files --ignore __tests__",
+    "build:watch": "yarn build --watch",
+    "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react-native-xmlrpc": "github:nguyenphuquang/react-native-xmlrpc"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.2.3",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/runtime": "^7.3.1"
+  }
+}
